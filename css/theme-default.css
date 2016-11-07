@@ -1,8 +1,20 @@
 /* http://brand.strv.com/content/ */
-body{
-  font-family: 'Audiowide', cursive;
-  
+/* clearfix */
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
 }
+.clearfix { display: inline-block; }
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+body{
+  font-family: 'Audiowide', cursive; 
+}
+.center{ text-align: center; }
 
 section.top{
   height: 100vh;
@@ -16,30 +28,23 @@ section.top{
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 /* logo */
-.logo{}
-  .logo *{
+.logo{
+  background: rgb(239,13, 51);
+  padding: 5px;
+}
+  .logo > div{
     float: left;
-    border: 2px solid #fff;
 
     font-size: 60px;
     line-height: 60px;
-    height: 55px;
     font-weight: 900;
-    background: rgb(239,13, 51);
+    
     color: #fff;
     text-transform: uppercase;
-  }
-  .logo .s{
-    padding: 2px 0 0 10px;
-  }
-  .logo .t{
-    padding: 4px 0 0 10px;
-  }
-  .logo .g{
-    padding: 2px 0 0 10px;
   }
 
 section.middle{
@@ -50,23 +55,38 @@ section.bottom{
   background: rgb(17,21,23);
 }
 
-
 /* font */
 .maintitle{
   text-transform: uppercase;
   font-size: 54px;
   color: #fff;
+  margin-top: 10px;
 
   text-shadow: 0 0 5px rgb(17,21,23);
 }
 .title{
-  float: left;
-  width: 100%;
   margin: 30px 0;
   font-size: 36px;
   text-align: center;
   text-transform: uppercase;
 }
+.comment{
+  padding: 15px;
+  margin-top: 15px;
+  
+  font-size: 14px;
+  text-align: center;
+  color: #aaaaaa;
+}
+  .comment i{
+    font-style: italic;
+    font-weight: 300;
+    color: rgb(239,13, 51);
+  }
+  .comment span{
+    border-top: 1px solid rgba(170, 170, 170, .5);
+    padding: 15px 5px 0;
+  }
 
 /* video wrapper */
 .video_wrapper{
@@ -79,6 +99,36 @@ section.bottom{
   padding: 1px;
 }
 
-.about_us .col-md-4 {
-  margin-bottom: 35px;
+/* worktime */
+.worktime{}
+  .worktime_block span{
+    display: inline-block;
+    margin: 10px;
+    background: rgb(239,13, 51);
+    color: #fff;
+    padding: 0 2px;
+  }
+
+/* about us*/
+.about_us .about_block {
+  margin-bottom: 15px;
+  height: 50px;
+  text-align: center;
+  text-transform: uppercase;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media(max-width: 767px){
+  .maintitle{
+    font-size: 25px;
+  }
+  .comment span{ border-top: 0; }
+}
+@media(max-width: 991px){
+  .worktime_block span{
+    display: block;
+  }
 }
