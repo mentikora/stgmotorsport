@@ -78,3 +78,7 @@ section.bottom{
   background: #000;
   padding: 1px;
 }
+
+.about_us .col-md-4 {
+  margin-bottom: 35px;
+}
