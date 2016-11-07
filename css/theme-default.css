@@ -1,0 +1,80 @@
+/* http://brand.strv.com/content/ */
+body{
+  font-family: 'Audiowide', cursive;
+  
+}
+
+section.top{
+  height: 100vh;
+  background: url('../img/stg_image_1.jpg') no-repeat 50%;
+
+  -webkit-background-size: cover;
+  background-size: cover;
+
+  background-attachment: fixed;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* logo */
+.logo{}
+  .logo *{
+    float: left;
+    border: 2px solid #fff;
+
+    font-size: 60px;
+    line-height: 60px;
+    height: 55px;
+    font-weight: 900;
+    background: rgb(239,13, 51);
+    color: #fff;
+    text-transform: uppercase;
+  }
+  .logo .s{
+    padding: 2px 0 0 10px;
+  }
+  .logo .t{
+    padding: 4px 0 0 10px;
+  }
+  .logo .g{
+    padding: 2px 0 0 10px;
+  }
+
+section.middle{
+
+}
+
+section.bottom{
+  background: rgb(17,21,23);
+}
+
+
+/* font */
+.maintitle{
+  text-transform: uppercase;
+  font-size: 54px;
+  color: #fff;
+
+  text-shadow: 0 0 5px rgb(17,21,23);
+}
+.title{
+  float: left;
+  width: 100%;
+  margin: 30px 0;
+  font-size: 36px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* video wrapper */
+.video_wrapper{
+  background: #000;
+}
+
+/* our_photos */
+.our_photos .col-md-4{
+  background: #000;
+  padding: 1px;
+}
