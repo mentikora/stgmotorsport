@@ -16,11 +16,95 @@ body{
   color: rgb(17,21,23);
 }
 .center{ text-align: center; }
+.img-responsive{
+  max-width: 100%;
+  display: inline-block;
+  height: auto;
+}
+
+*{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?zg2ji1');
+  src:  url('fonts/icomoon.eot?zg2ji1#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?zg2ji1') format('truetype'),
+    url('fonts/icomoon.woff?zg2ji1') format('woff'),
+    url('fonts/icomoon.svg?zg2ji1#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-phone:before {
+  content: "\e942";
+}
+.icon-arrow-up:before {
+  content: "\ea3a";
+}
+.icon-arrow-right:before {
+  content: "\ea3c";
+}
+.icon-arrow-down:before {
+  content: "\ea3e";
+}
+.icon-arrow-left:before {
+  content: "\ea40";
+}
+.icon-mail:before {
+  content: "\ea83";
+}
+.icon-google-plus:before {
+  content: "\ea8c";
+}
+.icon-facebook:before {
+  content: "\ea91";
+}
+.icon-instagram:before {
+  content: "\ea92";
+}
+.icon-twitter:before {
+  content: "\ea96";
+}
+.icon-vk:before {
+  content: "\ea98";
+}
+.icon-youtube:before {
+  content: "\ea9d";
+}
+.icon-skype:before {
+  content: "\eac5";
+}
+
+
 
 
 aside{
   margin-bottom: 50px;
 }
+  aside.drift{
+    margin-bottom: 0;
+  }
 section.top{
   height: 100vh;
   background: url('../img/stg_image_1.jpg') no-repeat 50%;
@@ -69,15 +153,31 @@ section.bottom{
 
   text-shadow: 0 0 5px rgb(17,21,23);
 }
+
+/* aside title */
 .title{
   margin: 30px 0;
   font-size: 36px;
   text-align: center;
   text-transform: uppercase;
 }
+  .title span{
+    position: relative;
+    display: inline-block;
+  }
+    .title span:after{
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      left: -10px;
+      width: calc(100% + 20px);
+      height: 2px;
+      background: rgb(239,13, 51);
+    }
+
 .comment{
   padding: 15px;
-  margin-top: 15px;
+  margin: 15px 0; 
   
   font-size: 14px;
   text-align: center;
@@ -88,10 +188,27 @@ section.bottom{
     font-weight: 300;
     color: rgb(239,13, 51);
   }
+    .comment i#tobottom{
+      text-decoration: underline;
+    }
   .comment span{
-    border-top: 1px solid rgba(170, 170, 170, .5);
-    padding: 15px 5px 0;
+    border-radius: 5px;
+    padding: 8px;
+    background: #F4F4F4;
+    position: relative;
   }
+    .comment span:before{
+      content: '';
+      position: absolute;
+      display: block;
+      top: -5px;
+      left: 50%;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0 5px 5px 5px;
+      border-color: transparent transparent #f4f4f4 transparent;
+    }
 .text{
   font-size: 16px;
   line-height: 21px;
@@ -106,7 +223,7 @@ section.bottom{
 /* our_photos */
 .our_photos .col-md-4{
   background: #000;
-  padding: 1px;
+  padding: 3px;
 }
 
 /* worktime */
@@ -131,14 +248,51 @@ section.bottom{
   align-items: center;
 }
 
+/* team */
+.team{
+  text-align: center;
+}
+  .team img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+  }
+
+.worker{
+  height: 278px;
+  padding-bottom: 18px;
+}
+  .worker .name{
+    margin-top: 15px;
+  }
+  .worker a{
+    text-decoration: none;
+    color: rgb(17,21,23);
+
+    transition: color .25s ease-in-out;
+    
+  }
+    .worker a:hover{
+      color: rgb(239,13, 51);
+    }
+
 @media(max-width: 767px){
   .maintitle{
     font-size: 25px;
   }
   .comment span{ border-top: 0; }
+  .worker{ height: auto; }
+    .worker a{
+      font-size: 25px;
+      display: inline-block;
+      margin: 10px;
+    }
 }
 @media(max-width: 991px){
   .worktime_block span{
+    display: block;
+  }
+  .comment span{
     display: block;
   }
 }
