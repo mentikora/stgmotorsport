@@ -13,9 +13,14 @@
 .clearfix { display: block; }
 body{
   font-family: 'Audiowide', cursive; 
+  color: rgb(17,21,23);
 }
 .center{ text-align: center; }
 
+
+aside{
+  margin-bottom: 50px;
+}
 section.top{
   height: 100vh;
   background: url('../img/stg_image_1.jpg') no-repeat 50%;
@@ -87,6 +92,11 @@ section.bottom{
     border-top: 1px solid rgba(170, 170, 170, .5);
     padding: 15px 5px 0;
   }
+.text{
+  font-size: 16px;
+  line-height: 21px;
+
+}
 
 /* video wrapper */
 .video_wrapper{
