@@ -5,6 +5,7 @@
 	<title>STG Motorsport</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
+  <link rel="stylesheet" href="css/slick.css">
   <link rel="stylesheet" href="css/application.css">
 </head>
 <body>
@@ -20,10 +21,24 @@
       <h1 class="maintitle">
         motorsport
       </h1>
+      <div class="mouse"></div>
     </section>
+
+    <div class="slick">
+      <div class="slick_1 slick_item"></div>
+      <div class="slick_2 slick_item"></div>
+      <div class="slick_3 slick_item"></div>
+      <div class="slick_4 slick_item"></div>
+      <div class="slick_5 slick_item"></div>
+      <div class="slick_6 slick_item"></div>
+      <div class="slick_7 slick_item"></div>
+      <div class="slick_8 slick_item"></div>
+      <div class="slick_9 slick_item"></div>
+    </div>
 
     <!-- section middle -->
     <section class="middle">
+
       
       <!-- who we are -->
       <aside class="whoweare">
@@ -79,7 +94,7 @@
 
           <div class="row comment">
             <span>
-              and much more!
+              And much more
             </span>
           </div>
         </div>
@@ -184,7 +199,7 @@
 
           <div class="row comment">
             <span>
-              ..and yes, we love <i>Subaru</i> and <i>DRIFT</i>
+              And yes, we love <i>Subaru</i> and <i>DRIFT</i>
             </span>
           </div>
         </div>
@@ -196,42 +211,64 @@
           </div>
         </div>
 
-        <div class="our_photos container-fluid">
+        
+
+        <!-- <div class="our_photos container-fluid hidden-xs">
           <div class="row">
-          <img src="img/stg_image_1.jpg" alt="" class="col-xs-12 col-sm-6 col-md-4 img-responsive">
-          <img src="img/stg_image_2.jpg" alt="" class="col-xs-12 col-sm-6 col-md-4 img-responsive">
-          <img src="img/stg_image_3.jpg" alt="" class="col-xs-12 col-md-4 img-responsive">
+            <img src="img/stg_image_1.jpg" alt="" class="col-xs-12 col-sm-6 col-md-4 img-responsive">
+            <img src="img/stg_image_2.jpg" alt="" class="col-xs-12 col-sm-6 col-md-4 img-responsive">
+            <img src="img/stg_image_3.jpg" alt="" class="col-xs-12 col-md-4 img-responsive">
           </div>
           <div class="row">
-          <img src="img/stg_image_4.jpg" alt="" class="col-xs-12 col-sm-6 col-md-4 img-responsive">
-          <img src="img/stg_image_5.jpg" alt="" class="col-xs-12 col-sm-6 col-md-4 img-responsive">
-          <img src="img/stg_image_6.jpg" alt="" class="col-xs-12 col-md-4 img-responsive">
+            <img src="img/stg_image_4.jpg" alt="" class="col-xs-12 col-sm-6 col-md-4 img-responsive">
+            <img src="img/stg_image_5.jpg" alt="" class="col-xs-12 col-sm-6 col-md-4 img-responsive">
+            <img src="img/stg_image_6.jpg" alt="" class="col-xs-12 col-md-4 img-responsive">
           </div>
           <div class="row">
-          <img src="img/stg_image_7.jpg" alt="" class="col-xs-12 col-sm-6 col-md-4 img-responsive">
-          <img src="img/stg_image_8.jpg" alt="" class="col-xs-12 col-sm-6 col-md-4 img-responsive">
-          <img src="img/stg_image_9.jpg" alt="" class="col-xs-12 col-md-4 img-responsive">
+            <img src="img/stg_image_7.jpg" alt="" class="col-xs-12 col-sm-6 col-md-4 img-responsive">
+            <img src="img/stg_image_8.jpg" alt="" class="col-xs-12 col-sm-6 col-md-4 img-responsive">
+            <img src="img/stg_image_9.jpg" alt="" class="col-xs-12 col-md-4 img-responsive">
           </div>
-        </div>
+        </div> -->
         
       </aside>
     </section>
     <section class="bottom">
-      <div class="container center">
-        <div class="col-xs-12">
-          <img src="img/stg_image_9.jpg" alt="" class="img-responsive">
-        </div>
-      </div>
+      <div id="map"></div>
+    
     </section>
   </main>
 
   <!-- script's -->
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script> -->
-  <!-- <script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
+  <script>
     (function(){
-      $('.our_photos').slick();
+      $('.slick').slick({
+        arrows: false,
+        autoplay: true
+      });
     })();
-  </script> -->
+  </script>
+  <script type="text/javascript">
+    var map;
+    function initMap() {
+
+      var myLatLng = {lat: 49.8268519, lng: 23.9923109};
+
+      map = new google.maps.Map(document.getElementById('map'), {
+        center: myLatLng,
+        zoom: 17
+      });
+
+      var marker = new google.maps.Marker({
+        position: myLatLng,
+        map: map,
+        title: 'STG Motorsport',
+      });
+    }
+  </script>
+  <script src="ja/application.js"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAt0jd3JBj9QxaCLJfqrKkOhV61G24aiKM&callback=initMap"></script>
 </body>
 </html>
