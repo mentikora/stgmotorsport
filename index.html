@@ -13,6 +13,9 @@
 
     <!-- section top -->
   	<section class="top">
+      <img src="img/1_1.png" alt="Clouds" class="cloud cloud1" style="transform: matrix(1, 0, 0, 1, -64.8, 35.15);">
+      <img src="img/2_2.png" alt="Clouds" class="cloud cloud2" style="transform: matrix(1, 0, 0, 1, -32.4, 17.575); opacity: .8;">
+      <img src="img/3_3.png" alt="Clouds" class="cloud cloud3" style="transform: matrix(1, 0, 0, 1, -21.6, 11.7167); opacity: .5;">
       <h2>
         welcome to 
       </h2>
@@ -263,6 +266,8 @@
   <!-- script's -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/TweenMax.min.js"></script>
+  <script src="js/parallax.js"></script>
   <script>
     (function(){
       $('.slick').slick({
@@ -279,6 +284,13 @@
     })();
   </script>
   <script type="text/javascript">
+
+    $('section.top').mousemove( function( e ) {
+      $( '.cloud1' )    .parallax( 10 , e );
+      $( '.cloud2' )    .parallax( 20 , e );
+      $( '.cloud3' )    .parallax( 30 , e );
+    });
+  
     var map;
     function initMap() {
 

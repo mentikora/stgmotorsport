@@ -11,9 +11,11 @@
 .clearfix { display: inline-block; }
 * html .clearfix { height: 1%; }
 .clearfix { display: block; }
+
 body{
   font-family: 'Audiowide', cursive; 
   color: rgb(17,21,23);
+  overflow-x: hidden;
 }
 .center{ text-align: center; }
 .img-responsive{
@@ -107,7 +109,13 @@ aside{
   }
 section.top{
   height: 100vh;
-  background: rgb(17,21,23);
+  /*background: rgb(17,21,23);*/
+  background: url('../img/top_bg_1.jpg') no-repeat 50% bottom ;
+  position: relative;
+  overflow: hidden;
+  -webkit-background-size: cover;
+  background-size: cover;
+  /*background-attachment: fixed;*/
 
   display: flex;
   justify-content: center;
@@ -116,6 +124,17 @@ section.top{
 }
   section.top h2{
     color: #fff;
+    position: relative;
+    z-index: 3;
+  }
+  .cloud{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: auto;
+    height: auto;
+    z-index: 2;
+    opacity: 0.8;
   }
 
 /* logo */
@@ -123,6 +142,8 @@ section.top{
   background: rgb(239,13, 51);
   padding: 5px;
   margin-top: 15px;
+  position: relative;
+    z-index: 3;
 }
   .logo > div{
     float: left;
@@ -142,6 +163,8 @@ section.top{
   border-radius: 50%;
   cursor: pointer;
   overflow: hidden;
+  position: relative;
+  z-index: 3;
 
   background: url('../img/pattern-stripes.png') repeat 0 0;
 
