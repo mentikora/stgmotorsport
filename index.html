@@ -309,6 +309,11 @@
         });
       }
 
+      // custom script
+      $('.btn_down').on('click', function(){
+        $("html, body").animate({scrollTop: $(".slick").offset().top}, 500);
+      });
+
     })();
   </script>
   
