@@ -326,11 +326,44 @@ section.bottom{
       color: rgb(239,13, 51);
     }
 
+
+/* section bottom */
+section.bottom{
+  text-align: center;
+  background: #000;
+  color: #fff;
+
+}
+  section.bottom .container{
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+    font-size: 18px;
+    line-height: 25px;
+  }
+  section.bottom a{
+    margin: 0 10px;
+    display: inline-block;
+
+    color: rgb(239,13, 51);;
+    text-decoration: none;
+    font-size: 25px;
+    line-height: 35px;
+    
+    transition: color .25s ease-in-out;
+  }
+    section.bottom a:hover{
+      color: #fff;
+    }
+
+/* google map */
 #map{
   height: 300px;
   background: #000;
 }
 
+
+/* slick slider */
 .slick img{
   height: 500px;
 }
@@ -363,25 +396,6 @@ section.bottom{
     width: 20px;
     height: 20px;
   }
-.slick{
-  
-}
-  .slick_item{
-    height: 500px;
-    -webkit-background-size: cover;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50%;
-  }
-  .slick_1{ background-image: url('../img/stg_image_1.jpg'); }
-  .slick_2{ background-image: url('../img/stg_image_2.jpg'); }
-  .slick_3{ background-image: url('../img/stg_image_3.jpg'); }
-  .slick_4{ background-image: url('../img/stg_image_4.jpg'); }
-  .slick_5{ background-image: url('../img/stg_image_5.jpg'); }
-  .slick_6{ background-image: url('../img/stg_image_6.jpg'); }
-  .slick_7{ background-image: url('../img/stg_image_7.jpg'); }
-  .slick_8{ background-image: url('../img/stg_image_8.jpg'); }
-  .slick_9{ background-image: url('../img/stg_image_9.jpg'); }
 
 @media(max-width: 767px){
   .maintitle{
