@@ -2,9 +2,10 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>STG Motorsport</title>
+	<title>СТО STG Motorsport - ремонт, діагностика</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+  <meta name="description" content="Автомобільний сервіс у Львові. Поклейка антигравийных пленок, автоакустика, комплексная подсветка автомобиля и стайлинг пленками.">
+  <meta name="keywords" itemprop="keywords" content="СТО Львів, діагностика автомобіля, ремонт ходової, ремонт двигуна, drift, drifting, автосервіс львів, ремонт авто, ремонт субару, дрифт">
   <link rel="stylesheet" href="css/slick.css">
   <link rel="stylesheet" href="css/application.css">
 </head>
@@ -13,10 +14,10 @@
 
     <!-- section top -->
   	<section class="top">
-      <img src="img/1_1.png" alt="Clouds" class="cloud cloud1" style="transform: matrix(1, 0, 0, 1, -64.8, 35.15);">
-      <img src="img/2_2.png" alt="Clouds" class="cloud cloud2" style="transform: matrix(1, 0, 0, 1, -32.4, 17.575); opacity: .8;">
-      <img src="img/3_3.png" alt="Clouds" class="cloud cloud3" style="transform: matrix(1, 0, 0, 1, -21.6, 11.7167); opacity: .5;">
-      <h2>
+      <img src="img/1_1.png" alt="Clouds" class="cloud cloud1 visible-md visible-lg" style="transform: matrix(1, 0, 0, 1, -64.8, 35.15);">
+      <img src="img/2_2.png" alt="Clouds" class="cloud cloud2 visible-md visible-lg" style="transform: matrix(1, 0, 0, 1, -32.4, 17.575); opacity: .8;">
+      <img src="img/3_3.png" alt="Clouds" class="cloud cloud3 visible-md visible-lg" style="transform: matrix(1, 0, 0, 1, -21.6, 11.7167); opacity: .5;">
+      <h2 class="hidden-xs hidden-sm">
         welcome to 
       </h2>
       <div class="logo">
@@ -27,7 +28,7 @@
       <h1 class="maintitle">
         motorsport
       </h1>
-      <div class="btn_down">
+      <div class="btn_down hidden-xs hidden-sm">
         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="40px" height="40px" viewBox="0 0 40 40">
           <path d="M32.021,13.929L20,25.949L7.979,13.929c-0.389-0.389-1.025-0.389-1.414,0s-0.389,1.025,0,1.414l12.728,12.728c0.389,0.389,1.025,0.389,1.414,0l12.728-12.728c0.389-0.389,0.389-1.025,0-1.414S32.41,13.54,32.021,13.929z"></path>
         </svg>
@@ -262,13 +263,19 @@
       $('.slick').slick({
         arrows: false,
         autoplay: true,
-
         dots: true,
         infinite: true,
         speed: 500,
         slidesToShow: 1,
         centerMode: true,
         variableWidth: true,
+        responsive: [
+          {
+            breakpoint: 991,
+            settings: {
+              dots: false
+            }
+          }]
       });
 
       // top parallax
