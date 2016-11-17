@@ -13,7 +13,7 @@
 .clearfix { display: block; }
 
 body{
-  font-family: 'Audiowide', cursive; 
+  font-family: 'Russo One', sans-serif;
   color: rgb(17,21,23);
   overflow-x: hidden;
 }
@@ -201,6 +201,7 @@ section.bottom{
 .title{
   margin: 30px 0;
   font-size: 36px;
+  font-weight: normal;
   text-align: center;
   text-transform: uppercase;
 }
@@ -227,7 +228,7 @@ section.bottom{
   color: #aaaaaa;
 }
   .comment i{
-    font-style: italic;
+    font-style: normal;
     font-weight: 300;
     color: rgb(239,13, 51);
   }
