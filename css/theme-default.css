@@ -112,7 +112,7 @@ section.top{
   position: relative;
   overflow: hidden;
 
-  background: rgb(17,21,23) url('../img/top_bg_1.jpg') no-repeat left bottom;
+  background: rgb(17,21,23) url('../img/top_bg.jpg') no-repeat left bottom;
   -webkit-background-size: cover;
   background-size: cover;
 
