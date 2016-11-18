@@ -1,0 +1,26 @@
+{
+  "name": "stgmotorsport.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mentikora/stgmotorsport.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mentikora/stgmotorsport.io/issues"
+  },
+  "homepage": "https://github.com/mentikora/stgmotorsport.io#readme",
+  "devDependencies": {
+    "css-loader": "^0.26.0",
+    "extract-text-webpack-plugin": "^2.0.0-beta.4",
+    "style-loader": "^0.13.1",
+    "webpack": "^2.1.0-beta.25"
+  }
+}
