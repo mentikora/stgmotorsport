@@ -1,4 +1,8 @@
 'use strict';
+window.fadeIn = function(obj) {
+  $(obj).fadeIn(1000);
+}
+
 $(document).ready(function(){
 
   // slider ini
@@ -31,5 +35,5 @@ $(document).ready(function(){
   $('.btn_down').on('click', function(){
     $("html, body").animate({scrollTop: $(".slick").offset().top}, 500);
   });
-  
+
 });
