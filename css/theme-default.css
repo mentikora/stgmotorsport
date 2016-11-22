@@ -228,6 +228,10 @@ section.bottom{
 
 /* worktime */
 .worktime{}
+  .worktime_block{
+    display: inline-block;
+    margin: 5px 15px;
+  }
   .worktime_block span{
     display: inline-block;
     margin: 10px;
@@ -235,6 +239,11 @@ section.bottom{
 
     background: rgb(239,13, 51);
     color: #fff;
+  }
+  .worktime .contacts{
+    margin-top: 35px;
+    font-size: 18px;
+    line-height: 25px;
   }
 
 /* about us*/
@@ -370,6 +379,9 @@ section.bottom{
       display: inline-block;
       margin: 10px;
     }
+  .worktime_block{
+    display: block;
+  }
 }
 @media(max-width: 991px){
   .worktime_block span{
