@@ -81,6 +81,11 @@ section.top{
     z-index: 2;
     opacity: 0.8;
   }
+    @media(max-width: 991px){
+      .cloud{
+        display: none !important;
+      }
+    }
 
 /* logo */
 .logo{
@@ -382,8 +387,8 @@ section.bottom{
 
 /* animation */
 .animated {
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
@@ -393,7 +398,7 @@ section.bottom{
   }
 
   to {
-    opacity: 1;
+    opacity: .8;
   }
 }
 
@@ -403,7 +408,7 @@ section.bottom{
   }
 
   to {
-    opacity: 1;
+    opacity: .8;
   }
 }
 
