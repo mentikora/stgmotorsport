@@ -19,15 +19,25 @@
   <script src="build.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="js/main.js"></script>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-87774367-1', 'auto');
+    ga('send', 'pageview');
+
+  </script>
 </head>
 <body>
   <main>
 
     <!-- section top -->
   	<section class="top">
-      <img src="img/1_1.png" alt="Clouds" class="cloud cloud1 visible-md visible-lg" style="transform: matrix(1, 0, 0, 1, -64.8, 35.15);">
-      <img src="img/2_2.png" alt="Clouds" class="cloud cloud2 visible-md visible-lg" style="transform: matrix(1, 0, 0, 1, -32.4, 17.575); opacity: .8;">
-      <img src="img/3_3.png" alt="Clouds" class="cloud cloud3 visible-md visible-lg" style="transform: matrix(1, 0, 0, 1, -21.6, 11.7167); opacity: .5;">
+      <img src="img/1_1.png" alt="Clouds" class="cloud cloud1 animated fadeIn" style="transform: matrix(1, 0, 0, 1, -64.8, 35.15);">
+      <img src="img/2_2.png" alt="Clouds" class="cloud cloud2 animated fadeIn" style="transform: matrix(1, 0, 0, 1, -32.4, 17.575);">
+      <img src="img/3_3.png" alt="Clouds" class="cloud cloud3 animated fadeIn" style="transform: matrix(1, 0, 0, 1, -21.6, 11.7167);">
       <h2 class="hidden-xs hidden-sm">
         Вітаємо в 
       </h2>
@@ -64,7 +74,6 @@
 
     <!-- section middle -->
     <section class="middle">
-
       
       <!-- who we are -->
       <aside class="whoweare">
@@ -90,49 +99,37 @@
           </h2>
           <div class="row">
             <div class="col-xs-6 col-sm-4 about_block">
-              <!-- technical inspection service -->
               технічний огляд авто
             </div>
             <div class="col-xs-6 col-sm-4 about_block">
-              <!-- braking system -->
               гальмівні системи
             </div>
             <div class="col-xs-6 col-sm-4 about_block">
-              <!-- steering -->
               рульове управління
             </div>
-            <!-- <div class="col-xs-6 col-sm-4 about_block">
-              PENDANT
-            </div> -->
             <div class="col-xs-6 col-sm-4 about_block">
-              <!-- ENGINE -->
               моторні роботи
             </div>
             <div class="col-xs-6 col-sm-4 about_block">
-              <!-- FUEL SYSTEM -->
               паливна система
             </div>
             <div class="col-xs-6 col-sm-4 about_block">
-              <!-- ELECTRICITY -->
               електрика
             </div>
-            <!-- <div class="col-xs-6 col-sm-4 about_block">
-              CLUTCH
-            </div> -->
             <div class="col-xs-6 col-sm-4 about_block">
-              <!-- TRANSMISSION -->
               трансмісія
             </div>
           </div>
 
           <div class="row comment">
             <span>
-              Та багато іншого
+              Ми не будемо морити вас великою кількістю непотрібного тексту. Працюємо з 99% випадками зі списку поданого вище.
             </span>
           </div>
         </div>
       </aside>
-
+      
+      <!-- worktime -->
       <aside>
         <div class="container">
           <div class="title">
@@ -178,8 +175,7 @@
 
             <div class="row comment">
               <span>
-                Ми залишили вам номер телефону в нижній частині сторінки, щоб ви могли зв'язатися з нами 
-                <!-- We left you a telephone number to contact and write us at the <i id="tobottom">bottom</i> of the page -->
+                Ми залишили вам номер телефону і карту в нижній частині сторінки, щоб ви могли зв'язатися з нами 
               </span>
             </div>
 
@@ -213,6 +209,7 @@
                   Максим
                 </p>
                 <a href="https://www.instagram.com/maxhorobets/" target="_blank" class="icon-instagram"></a>
+                <a href="https://www.facebook.com/profile.php?id=100005523483252" target="_blank" class="icon-facebook"></a>
               </div>
               <!-- <div class="col-sm-6 col-md-4 worker">
                 <img src="img/pasha_1.jpg" alt="" class="img-responsive">
