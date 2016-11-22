@@ -203,11 +203,15 @@ section.bottom{
       border-width: 0 5px 5px 5px;
       border-color: transparent transparent #f4f4f4 transparent;
     }
+
 .text{
   font-size: 16px;
   line-height: 21px;
-
 }
+  .text a{
+    color: rgb(239,13, 51);
+    text-decoration: underline;
+  }
 
 /* video wrapper */
 .video_wrapper{
@@ -295,6 +299,10 @@ section.bottom{
       color: rgb(239,13, 51);
     }
 
+/* aside other */
+aside.other{
+  margin-bottom: 0;
+}
 
 /* section bottom */
 section.bottom{
@@ -366,6 +374,7 @@ section.bottom{
     text-indent: -9999px;
     width: 20px;
     height: 20px;
+    cursor: pointer;
   }
 
 @media(max-width: 767px){
