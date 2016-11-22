@@ -1,6 +1,6 @@
 'use strict';
 window.fadeIn = function(obj) {
-  $(obj).fadeIn(1000);
+  $(obj).fadeIn(150);
 }
 
 $(document).ready(function(){
