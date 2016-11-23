@@ -5,7 +5,7 @@ window.fadeIn = function(obj) {
 
 $(document).ready(function(){
 
-  // slider ini
+  // garage slider ini
   $('.slick').slick({
     arrows: false,
     autoplay: true,
@@ -23,6 +23,9 @@ $(document).ready(function(){
         }
       }]
   });
+
+  // drift slider ini
+  //$()
 
   // top parallax
   $('section.top').mousemove( function( e ) {
