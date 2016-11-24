@@ -5,8 +5,6 @@ window.fadeIn = function(obj) {
 
 $(document).ready(function(){
 
-  $(".nano").nanoScroller();
-
   // garage slider ini
   $('.slick').slick({
     arrows: false,
