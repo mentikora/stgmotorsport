@@ -5,6 +5,8 @@ window.fadeIn = function(obj) {
 
 $(document).ready(function(){
 
+  $(".nano").nanoScroller();
+
   // garage slider ini
   $('.slick').slick({
     arrows: false,
@@ -24,8 +26,6 @@ $(document).ready(function(){
       }]
   });
 
-  // drift slider ini
-  //$()
 
   // top parallax
   $('section.top').mousemove( function( e ) {
@@ -36,7 +36,7 @@ $(document).ready(function(){
 
   // custom script
   $('.btn_down').on('click', function(){
-    $("html, body").animate({scrollTop: $(".slick").offset().top}, 500);
+    $("html, body").animate({scrollTop: $(".slick").offset().top}, 800);
   });
 
 });
